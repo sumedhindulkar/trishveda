@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #41887c;
+  background-color: #f6f5f1;
+}
+.bg-b {
+  background-color: blue;
+}
+.bg-y {
+  background-color: yellow;
+}
+.bg-r {
+  background-color: red;
+}
+/* General */
+.container {
+  margin: 0 80px;
+}
+.w-30 {
+  width: 30%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-100 {
+  width: 100%;
+}
+.mt-max {
+  margin-top: 120px;
+}
+.mx-ne {
+  margin-left: -40px;
+}
+.my-2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "freight-display-pro";
+}
+h1 {
+  font-size: 5em;
+  font-weight: 100;
+}
+h2 {
+  font-size: 4em;
+  font-weight: 100;
+}
+h3 {
+  font-size: 3em;
+  font-weight: 100;
+}
+
+.my-btn {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px solid #41887c;
+  color: #41887c;
+  border-radius: 20px;
+}
+/* Navbar */
+.navbar {
+  height: 14vh;
+  background-color: #f6f5f1;
+  border-bottom: 2px solid rgb(197, 197, 197);
+  font-family: "navigo";
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav ul li {
+  list-style: none;
+  font-size: 1.4em;
+}
+.nav ul li a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #41887c;
+}
+/* Main Section */
+.main-section {
+  height: 86vh;
+}
+.main-section > div {
+  height: 100%;
+}
+.main-section .left img {
+  width: 75%;
+  height: 420px;
+  margin: 15px auto;
+  object-fit: cover;
+  border-radius: 300px;
+}
+.main-section .right img {
+  width: 75%;
+  margin: 25px 50px;
+  object-fit: cover;
+  border-radius: 300px;
+}
+
+/* Safety */
+.safety {
+  height: 100vh;
+}
+.safety > div {
+  position: relative;
+}
+.safety .right img {
+  width: 35%;
+  object-fit: cover;
+  border-bottom-right-radius: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  z-index: -1;
+}
+.safety .left {
+  background-color: pink;
+}
