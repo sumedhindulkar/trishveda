@@ -6,6 +6,10 @@
     flex-wrap: wrap;
     flex-direction: column-reverse;
   }
+  .product-header .container img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
   .product-header .container .w-40 img {
     width: 100%;
     padding: 0;

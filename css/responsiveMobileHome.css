@@ -43,9 +43,11 @@
   /* Safety */
   .safety {
     position: relative;
+    margin-top: 400px;
   }
   .safety .container h1 {
-    padding-top: 30px;
+    position: relative;
+    top: 30px;
   }
   .safety .left {
     left: 50%;

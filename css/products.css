@@ -5,6 +5,10 @@
 .product-header .container {
   height: 100%;
 }
+.product-header .container img {
+  border-top-left-radius: 600px;
+  border-top-right-radius: 600px;
+}
 /* product section */
 .products {
   background-color: #41887c;
