@@ -7,3 +7,4 @@ function mobileMenu() {
   hamburger.classList.toggle("rotate");
   navMenu.classList.toggle("active");
 }
+

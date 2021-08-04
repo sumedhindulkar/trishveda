@@ -115,34 +115,38 @@ h4 {
   display: none;
 }
 .my-btn {
-  padding: 10px 30px;
   background-color: transparent;
+  padding: 10px 30px;
   border: 1px solid #41887c;
   color: #41887c;
   border-radius: 20px;
+  font-family: "navigo";
 }
 .my-btn:hover {
   background-color: #41887c;
   color: #fff;
 }
 .my-btn2 {
-  padding: 10px 30px;
   background-color: #41887c;
+  font-family: "navigo";
+  padding: 10px 30px;
   border: none;
   color: #fff;
   border-radius: 20px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .my-btn2:hover {
   background-color: #17584e;
 }
 .my-btn3 {
-  padding: 10px 30px;
   background-color: transparent;
+  font-family: "navigo";
+  padding: 10px 30px;
   border: 1px solid rgb(245, 244, 240);
   color: #f6f5f1;
   font-size: 20px;
   border-radius: 40px;
+  font-size: 16px;
 }
 .my-btn3:hover {
   background-color: #fff;
@@ -190,11 +194,13 @@ p {
 .nav ul a {
   color: #41887c;
   text-decoration: none;
+  background-size: 100% 100%;
+  padding: 20px;
 }
-.nav ul li a:hover {
-  cursor: pointer;
-  border-bottom: 2px solid #41887c;
+.nav-active {
+  background-image: url("../images/nav-active.svg");
 }
+
 /* Main Section */
 .main-section {
   height: 86vh;
@@ -218,7 +224,8 @@ p {
 
 /* Safety */
 .safety {
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -291,6 +298,9 @@ p {
 .natrual-items > div {
   width: 33%;
 }
+.natrual-items div:nth-child(2n) {
+  margin: 0 5px;
+}
 .natrual-icons {
   width: 80px;
 }
@@ -318,7 +328,8 @@ p {
 }
 /* Explore */
 .explore {
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 }
 .explore img {
   width: 70%;
@@ -330,7 +341,8 @@ p {
 /* Footer */
 footer {
   background: url("../images/footer-bg.png");
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background-size: 100% auto;
 }
 .footer {
@@ -364,6 +376,10 @@ footer {
 }
 .footer-items ul li:nth-child(1) {
   opacity: 0.7;
+}
+.footer a {
+  text-decoration: none;
+  color: inherit;
 }
 @media (max-width: 1000px) {
   .main-section {
@@ -452,6 +468,7 @@ footer {
     justify-content: space-between;
     margin-right: 40px;
   }
+
   .menu {
     width: 55px;
     height: 55px;
