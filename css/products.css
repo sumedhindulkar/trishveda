@@ -20,13 +20,13 @@
   text-decoration-line: line-through;
   text-decoration-thickness: 5px;
 }
+
 .products .bottom {
-  justify-content: space-between;
   flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-  -webkit-flex-wrap: wrap;
   display: -webkit-flex;
-  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
 .product {
   background-color: #f5f4f0;
