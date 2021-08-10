@@ -23,6 +23,10 @@
 .products .bottom {
   justify-content: space-between;
   flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  display: -webkit-flex;
+  display: -ms-flexbox;
 }
 .product {
   background-color: #f5f4f0;
