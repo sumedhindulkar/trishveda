@@ -23,9 +23,13 @@
 
 .products .bottom {
   flex-wrap: wrap;
+  display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .product {
@@ -34,6 +38,7 @@
   border-top-right-radius: 80px;
   color: #41887c;
   min-width: 250px;
+  width: 250px;
 }
 .products .bottom img {
   width: 100%;
