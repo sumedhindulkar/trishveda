@@ -2,6 +2,7 @@
   .contact {
     padding: 10px;
     position: relative;
+    z-index: -1;
   }
   .contact .container {
     flex-wrap: wrap;
@@ -21,5 +22,11 @@
     top: 300px;
     left: 50%;
     transform: translate(-50%);
+  }
+  .contact .bottom {
+    flex-wrap: wrap;
+  }
+  .contact .bottom div {
+    padding: 10px 0;
   }
 }

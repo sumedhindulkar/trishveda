@@ -1,4 +1,10 @@
 @media (max-width: 480px) {
+  .line {
+    display: none;
+  }
+  .products .container {
+    padding: 0 30px;
+  }
   .product-header {
     height: 100%;
   }
@@ -24,11 +30,13 @@
   .products {
     margin-top: 100px;
     height: 100%;
+    padding-bottom: 50px;
   }
   /* essential */
   .essential {
     overflow: hidden;
   }
+
   .essential .container .top {
     flex-wrap: wrap;
     flex-direction: column;
@@ -50,6 +58,11 @@
   .essential .container .bottom {
     flex-wrap: wrap;
     flex-direction: column-reverse;
+  }
+  .essential .container .bottom .right h3 {
+    font-size: 24px;
+    text-align: right;
+    margin: 8px auto;
   }
   .essential .container .bottom .right {
     margin: 0;
