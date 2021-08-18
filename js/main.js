@@ -5,6 +5,5 @@ hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
   hamburger.classList.toggle("rotate");
-  navMenu.classList.toggle("active");
+  navMenu.classList.toggle("my-active");
 }
-

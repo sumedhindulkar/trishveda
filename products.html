@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/products.css" />
     <link rel="stylesheet" href="./css/responsiveMobileProducts.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
   </head>
   <body>
     <div class="product-page">
@@ -71,22 +77,52 @@
             </h1>
             <p class="my-1">Our Bestsellers Products.</p>
           </div>
+          <h2 class="my-2">Oils</h2>
+          <div class="wrapper center">
+            <div class="carousel owl-carousel">
+              <div class="product oils">
+                <img src="./images/oils/almond-oil.jpg" alt="" />
+                <p class="p-1">Almond Oil<br />Rs. 1,200</p>
+              </div>
+              <div class="product oils">
+                <img src="./images/oils/linseed-seeds.jpg" alt="" />
+                <p class="p-1">Linseed Oil<br />Rs. 999</p>
+              </div>
+              <div class="product oils">
+                <img src="./images/oils/chia-seeds.jpg" alt="" />
+                <p class="p-1">Chiaseed Oil<br />Rs. 1,100</p>
+              </div>
+              <div class="product oils">
+                <img src="./images/oils/Sesame-seeds.jpg" alt="" />
+                <p class="p-1">Sesame Oil<br />Rs. 500</p>
+              </div>
+              <div class="product oils">
+                <img src="./images/oils/neem.jpg" alt="" />
+                <p class="p-1">Hemp seed Oil<br />Rs. 500</p>
+              </div>
+              <div class="product oils">
+                <img src="./images/oils/kalonji-seeds.jpg" alt="" />
+                <p class="p-1">Kalonji Oil<br />Rs. 500</p>
+              </div>
+            </div>
+          </div>
+          <h2 class="my-2">Scrubs (Exfoliators)</h2>
           <div class="bottom flex my-2">
             <div class="product">
-              <img src="./images/safety-b.jpg" alt="" />
-              <p class="p-1">lorem ipsum<br />Rs. 999</p>
+              <img src="./images/oils/scrubs-a.jpg" alt="" />
+              <p class="p-1">Red Lentil Exfoliator<br />Rs. 1,200</p>
             </div>
             <div class="product">
-              <img src="./images/safety-b.jpg" alt="" />
-              <p class="p-1">lorem ipsum<br />Rs. 999</p>
+              <img src="./images/oils/scrubs-b.jpg" alt="" />
+              <p class="p-1">Pink Salt Exfoliator<br />Rs. 999</p>
             </div>
             <div class="product">
-              <img src="./images/safety-b.jpg" alt="" />
-              <p class="p-1">lorem ipsum<br />Rs. 999</p>
+              <img src="./images/oils/scrubs-c.jpg" alt="" />
+              <p class="p-1">Almond Exfoliator<br />Rs. 1,100</p>
             </div>
             <div class="product">
-              <img src="./images/safety-b.jpg" alt="" />
-              <p class="p-1">lorem ipsum<br />Rs. 999</p>
+              <img src="./images/oils/scrubs-d.jpg" alt="" />
+              <p class="p-1">Coffee Exfoliator<br />Rs. 1,100</p>
             </div>
           </div>
           <button class="my-btn3">Get A Quote</button>
@@ -119,17 +155,6 @@
             </div>
           </div>
           <div class="flex bottom">
-            <div class="w-50 right p-2">
-              <img
-                class="w-70"
-                src="./images/products-essential-b.png"
-                alt=""
-              />
-            </div>
-            <div class="w-50 mx-ne-2 right">
-              <h1>Natrual <br />Ingredients</h1>
-              <h3>Born out of Rich Biodiversity.</h3>
-            </div>
             <div class="vision">
               <img src="./images/essential-a.png" alt="" />
               <p>
@@ -145,6 +170,17 @@
                 of ingredients where we only use local indigenous plant based
                 raw materials.
               </p>
+            </div>
+            <div class="w-50 left p-2">
+              <img
+                class="w-70"
+                src="./images/products-essential-b.png"
+                alt=""
+              />
+            </div>
+            <div class="w-50 mx-ne-2 right">
+              <h1>Natrual <br />Ingredients</h1>
+              <h3>Born out of Rich Biodiversity.</h3>
             </div>
           </div>
         </div>
@@ -210,5 +246,28 @@
     </div>
 
     <script src="./js/main.js"></script>
+    <script>
+      $(".carousel").owlCarousel({
+        loop: true,
+        autoPlay: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
+            margin: 20,
+          },
+          600: {
+            items: 1,
+            nav: false,
+          },
+          1000: {
+            items: 4,
+            nav: false,
+            loop: false,
+            margin: 60,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

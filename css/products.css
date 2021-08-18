@@ -9,11 +9,27 @@
   border-top-left-radius: 600px;
   border-top-right-radius: 600px;
 }
+/* Owl carousel */
+.wrapper {
+  width: 100%;
+}
+.wrapper .carousel {
+  margin: auto;
+}
+.center .products {
+  height: 360px;
+}
+.oils img {
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+}
 /* product section */
+
 .products {
   background-color: #41887c;
   color: #fff;
-  height: 130vh;
+  min-height: 100%;
+  height: 1500px;
   padding-top: 10vh;
 }
 .products h1 span {
@@ -57,11 +73,12 @@
   box-shadow: 15px -16px 0px 1px rgba(65, 136, 124, 0.4);
   -webkit-box-shadow: 15px -16px 0px 1px rgba(65, 136, 124, 0.4);
 }
-.essential .bottom .right img {
+.essential .bottom .left img {
   border-bottom-left-radius: 250px;
   box-shadow: -15px -16px 0px 1px rgba(65, 136, 124, 0.4);
   -webkit-box-shadow: -15px -16px 0px 1px rgba(65, 136, 124, 0.4);
 }
+
 .essential .container .top .left a {
   color: #41887c;
 }

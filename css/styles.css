@@ -446,7 +446,7 @@ footer {
     transition: all 800ms;
     transform: rotateZ(90deg);
   }
-  .active {
+  .my-active {
     display: flex !important;
     align-items: center;
     flex-direction: column;
