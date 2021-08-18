@@ -79,10 +79,12 @@
     top: 250px;
     left: -40px;
   }
-  .journey p,
-  .journey button {
+  .journey p {
     width: 60%;
     margin-left: 120px;
+  }
+  .journey .my-btn3 {
+    margin-left: 80px;
   }
   footer {
     margin-top: 0;
