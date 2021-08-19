@@ -7,15 +7,6 @@ body {
   color: #41887c;
   background-color: #f6f5f1;
 }
-.bg-b {
-  background-color: blue;
-}
-.bg-y {
-  background-color: yellow;
-}
-.bg-r {
-  background-color: red;
-}
 /* General */
 .container {
   margin: 0 80px;
@@ -179,8 +170,11 @@ p {
   margin: 0 4px;
 }
 /* Navbar */
+.socials {
+  display: none;
+}
 .navbar {
-  height: 14vh;
+  min-height: 14vh;
   background-color: #f6f5f1;
   border-bottom: 2px solid rgb(197, 197, 197);
   font-family: "navigo";
@@ -210,7 +204,7 @@ p {
 
 /* Main Section */
 .main-section {
-  height: 86vh;
+  min-height: 86vh;
 }
 .main-section > div {
   height: 100%;
@@ -234,6 +228,7 @@ p {
   height: 100%;
   min-height: 100vh;
   position: relative;
+  margin-top: 180px;
 }
 
 .safety .right img {
@@ -358,6 +353,9 @@ footer {
   background-color: #fff;
   border-radius: 40px;
 }
+.footer .right {
+  padding: 40px 70px;
+}
 .footer .left img {
   width: 100%;
   height: 100%;
@@ -447,6 +445,9 @@ footer {
     font-size: 15px !important;
   }
   /* Navbar */
+  .socials {
+    display: block;
+  }
   .navbar {
     height: 120px;
   }
@@ -458,14 +459,15 @@ footer {
     display: flex !important;
     align-items: center;
     flex-direction: column;
-    height: 60vh;
+    height: 86vh;
     position: absolute;
     top: 120px;
     left: 50%;
     transform: translate(-50%);
-    background-color: #d4d3cfd7;
+    background-color: #d4d3cf;
     width: 100%;
     animation: fadeIn 1.5s;
+    z-index: 3;
   }
 
   .navbar .nav ul {
